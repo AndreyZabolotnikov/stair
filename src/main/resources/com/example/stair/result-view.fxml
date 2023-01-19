@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="868.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stair.ResultController">
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="14.0" prefHeight="345.0" prefWidth="584.0">
+         <children>
+            <Text fill="RED" layoutX="245.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EasyTrap" underline="true" wrappingWidth="94.13671875">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <GridPane layoutX="14.0" layoutY="40.0" prefHeight="211.0" prefWidth="550.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: FF0000; -fx-border-radius: 5; -fx-background-color: FFEECC;" GridPane.columnIndex="1">
+                     <children>
+                        <Text layoutX="7.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Проходной">
+                           <font>
+                              <Font name="System Italic" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5; -fx-background-color: FFEECC;" GridPane.columnIndex="2">
+                     <children>
+                        <Text layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Боковой" wrappingWidth="113.5546875">
+                           <font>
+                              <Font name="System Italic" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5; -fx-background-color: FFEECC;" GridPane.columnIndex="3">
+                     <children>
+                        <Text layoutX="7.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 стороны">
+                           <font>
+                              <Font name="System Italic" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5; -fx-background-color: FFDDCC;" GridPane.rowIndex="1">
+                     <children>
+                        <Text layoutX="39.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="К стене">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5; -fx-background-color: FFDDCC;" GridPane.rowIndex="2">
+                     <children>
+                        <Text layoutX="26.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="На опорах">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5; -fx-background-color: 0000;">
+                     <children>
+                        <ImageView fitHeight="53.0" fitWidth="71.0" layoutX="34.0" layoutY="9.0">
+                           <image>
+                              <Image url="@../../../icons/stair_l.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="wallPassingET" fill="RED" layoutX="48.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НЕТ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="wallSideET" fill="RED" layoutX="51.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НЕТ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="wall3SidesET" fill="RED" layoutX="48.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НЕТ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="supportsPassingET" fill="RED" layoutX="53.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НЕТ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="supportsSideET" fill="RED" layoutX="48.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НЕТ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="supports3SidesET" fill="RED" layoutX="46.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НЕТ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+               </children>
+            </GridPane>
+            <GridPane layoutX="14.0" layoutY="260.0" prefHeight="71.0" prefWidth="435.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="500.0" minWidth="500.0" prefWidth="500.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Угол подъема платформы ET" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="liftingAngle" strokeType="OUTSIDE" strokeWidth="0.0" text="___" wrappingWidth="27.412109375">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Длина пути подъема платформы ET" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lengthWayET" strokeType="OUTSIDE" strokeWidth="0.0" text="_______" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Минимальная нижняя площадка ET (проходной и 3 стороны)" wrappingWidth="546.0107421875" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="мм" textAlignment="RIGHT" wrappingWidth="81.13671875" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lengthLowerPlatformMinET" strokeType="OUTSIDE" strokeWidth="0.0" text="_______" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Минимальная нижняя площадка ET (боковой)" wrappingWidth="437.0107421875" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="мм" textAlignment="RIGHT" wrappingWidth="81.13671875" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lengthLowerPlatformSideMinET" strokeType="OUTSIDE" strokeWidth="0.0" text="_______" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="°" textAlignment="RIGHT" wrappingWidth="44.13671875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="мм" textAlignment="RIGHT" wrappingWidth="81.13671875" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="250.0" fitWidth="250.0" layoutX="721.0" layoutY="37.0">
+         <image>
+            <Image url="@../../../EasyTrap.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="250.0" fitWidth="250.0" layoutX="721.0" layoutY="382.0">
+         <image>
+            <Image url="@../../../npu01.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="15.0" layoutY="743.0" prefHeight="71.0" prefWidth="995.0" style="-fx-border-radius: 10; -fx-border-color: FF0000;">
+         <children>
+            <GridPane layoutX="13.0" layoutY="3.0" prefHeight="60.0" prefWidth="963.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Если подъемник проходит, то подъемник считать стандартным. ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Если  программа выдала, что подъёмник не проходит, то необходимо обратиться к инженеру для построения и проверки всех возможных вариантов." GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Возможные причины: сложная траектория (высота над ступенями выше 200 мм, нехватает длины пандуса)." wrappingWidth="975.884765625" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Если угол подъёма и длина пути равна нулю, то траектория сложная." wrappingWidth="975.884765625" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="backButton" layoutX="389.0" layoutY="822.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="246.0" text="НАЗАД" />
+      <AnchorPane layoutX="15.0" layoutY="359.0" prefHeight="329.0" prefWidth="584.0">
+         <children>
+            <Text fill="RED" layoutX="263.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НПУ" underline="true" wrappingWidth="51.13671875">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <GridPane layoutX="17.0" layoutY="42.0" prefHeight="211.0" prefWidth="550.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="71.0" prefWidth="192.0" style="-fx-border-color: FF0000; -fx-border-radius: 5; -fx-background-color: FFEECC;" GridPane.columnIndex="1">
+                     <children>
+                        <Text layoutX="2.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="       Проходной" wrappingWidth="216.953125">
+                           <font>
+                              <Font name="System Italic" size="24.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="219.0" style="-fx-border-color: FF0000; -fx-border-radius: 5; -fx-background-color: FFEECC;" GridPane.columnIndex="3">
+                     <children>
+                        <Text layoutX="8.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="         Боковой" wrappingWidth="210.0">
+                           <font>
+                              <Font name="System Italic" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5; -fx-background-color: FFDDCC;" GridPane.rowIndex="2">
+                     <children>
+                        <Text layoutX="25.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="К стене">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5; -fx-background-color: FFDDCC;" GridPane.rowIndex="3">
+                     <children>
+                        <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="На опорах">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5; -fx-background-color: 0000;">
+                     <children>
+                        <ImageView fitHeight="43.0" fitWidth="60.0" layoutX="25.0" layoutY="5.0">
+                           <image>
+                              <Image url="@../../../icons/stair_l.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="wallPassingUpBoxNPU" fill="RED" layoutX="34.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НЕТ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="wallSideUpBoxNPU" fill="RED" layoutX="32.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НЕТ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <Text fx:id="supportsPassingUpBoxNPU" fill="RED" layoutX="34.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НЕТ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <children>
+                        <Text fx:id="supportsSideUpBoxNPU" fill="RED" layoutX="34.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НЕТ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="wallPassingLowerBoxNPU" fill="RED" layoutX="34.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НЕТ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <children>
+                        <Text fx:id="supportsPassingLowerBoxNPU" fill="RED" layoutX="34.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НЕТ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5;" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="wallSideLowerBoxNPU" fill="RED" layoutX="34.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НЕТ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5;" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <children>
+                        <Text fx:id="supportsSideLowerBoxNPU" fill="RED" layoutX="34.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НЕТ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-background-color: F7E6FF; -fx-border-radius: 5;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Text layoutX="14.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Верхний короб" textAlignment="CENTER" wrappingWidth="94.13671875">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5; -fx-background-color: FFDDCC;" GridPane.rowIndex="1" />
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-background-color: F7E6FF; -fx-border-radius: 5;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Text layoutX="9.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Нижний короб" textAlignment="CENTER" wrappingWidth="94.13671875">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5; -fx-background-color: D5CCFF;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <Text layoutX="8.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Верхний короб" textAlignment="CENTER" wrappingWidth="94.13671875">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="71.0" prefWidth="141.0" style="-fx-border-color: FF0000; -fx-border-radius: 5; -fx-background-color: D5CCFF;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <children>
+                        <Text layoutX="8.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Нижний короб" textAlignment="CENTER" wrappingWidth="94.13671875">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+            <GridPane layoutX="14.0" layoutY="260.0" prefHeight="77.0" prefWidth="447.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="450.0" minWidth="450.0" prefWidth="450.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="20.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Угол подъема платформы НПУ" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Длина пути подъема платформы НПУ" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="liftingAngleNPU" strokeType="OUTSIDE" strokeWidth="0.0" text="___" wrappingWidth="39.412109375">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lengthWayNPU" strokeType="OUTSIDE" strokeWidth="0.0" text="_______" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Минимальная нижняя площадка НПУ (проходной)" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lengthLowerPlatformMinNPU" strokeType="OUTSIDE" strokeWidth="0.0" text="_______" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="мм" textAlignment="RIGHT" wrappingWidth="81.13671875" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lengthLowerPlatformSideMinNPU" strokeType="OUTSIDE" strokeWidth="0.0" text="_______" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Минимальная нижняя площадка НПУ (боковой)" wrappingWidth="437.0107421875" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="°" textAlignment="RIGHT" wrappingWidth="44.13671875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="мм" textAlignment="RIGHT" wrappingWidth="81.13671875" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="мм" textAlignment="RIGHT" wrappingWidth="81.13671875" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <GridPane layoutX="590.0" layoutY="669.0" prefHeight="32.0" prefWidth="425.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="85.0" percentWidth="0.0" prefWidth="85.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="340.0" minWidth="340.0" percentWidth="0.0" prefWidth="340.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Высота подъема платформы" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="heightWay" strokeType="OUTSIDE" strokeWidth="0.0" text="_______" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="lengthWaySteps" strokeType="OUTSIDE" strokeWidth="0.0" text="_______" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Длина подъема (как в опросном листе)" wrappingWidth="346.4892578125" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Угол лестницы" GridPane.columnIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="angleStair" strokeType="OUTSIDE" strokeWidth="0.0" text="___">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="°" textAlignment="RIGHT" wrappingWidth="44.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="мм" textAlignment="RIGHT" wrappingWidth="81.13671875" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="мм" textAlignment="RIGHT" wrappingWidth="81.13671875" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+      <Text fill="RED" layoutX="294.0" layoutY="736.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Внимание!" underline="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
